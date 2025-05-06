@@ -356,6 +356,10 @@ article a:hover {
   .contact .inner-width {
     display: block;
   }
+
+  .contact-info .item:hover {
+    background-color: transparent;
+  }
   
   .contact .contact-info, 
   .contact .contact-form {
