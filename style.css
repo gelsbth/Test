@@ -308,6 +308,7 @@ article a:hover {
   }
 
   ul li a {
+    transition: none;
     font-weight: bold;
     font-size: 1.25rem;
     color: #fff;
@@ -333,8 +334,8 @@ article a:hover {
   }
 
   .blogg {
+    padding-top: 118px;
     max-width: 100%;
-    padding: 1rem;
     margin: 0;
   }
   .blogg article {
@@ -366,5 +367,10 @@ article a:hover {
 
   .galeri {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .item {
+    color: #fff;
+    font-weight: 400;
   }
 }
