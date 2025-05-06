@@ -293,6 +293,7 @@ article a:hover {
   }
 
   ul {
+    font-weight: bold;
     position: absolute;
     width: 100%;
     height: calc(100vh - 100px);
