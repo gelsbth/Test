@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -36,6 +37,7 @@ nav .logo a{
   font-size: 1.5rem;
   font-weight: 600;
   color: #333;
+  font-weight: bold;
   transition: 0.3s;
   text-decoration: none;
 }
@@ -95,7 +97,7 @@ ul li a:hover {
 }
 
 .section {
-  background-color: #faf5ff;
+  background-color: #fff;
   padding-top: 110px;
 }
 
@@ -117,7 +119,7 @@ ul li a:hover {
 }
 
 .title span {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .description {
@@ -140,74 +142,6 @@ ul li a:hover {
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-@media (width < 750px) {
-  nav .checkbox {
-    display: block;
-  }
-
-  ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 85px);
-    left: -100%;
-    top: 100px;
-    background-color: #faf5ff;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  nav #check:checked ~ ul {
-    left: 0;
-  }
-
-  ul li a {
-    font-size: 1.25rem;
-  }
-
-  .section__container {
-    text-align: center;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .image {
-    grid-area: 1/1/2/2;
-    order: -1;
-  }
-
-  .blogg {
-    max-width: 100%;
-    padding: 1rem;
-    margin: 0;
-  }
-  .blogg article {
-    font-size: 1rem;
-    padding: 10px;
-  }
-  .blogg h2 {
-    font-size: 1.2rem;
-  }
-  .blogg p, .blogg small {
-    font-size: 0.95rem;
-  }
-  .blogg a {
-    font-size: 1rem;
-    word-break: break-all;
-  }
-
-  .contact .inner-width {
-    display: block;
-  }
-  
-  .contact .contact-info, 
-  .contact .contact-form {
-    width: 100%;
-    float: none;
-    margin: 0 0 30px 0;
-    max-width: none;
-  }
 }
 
 .galeri {
@@ -353,3 +287,75 @@ article a:hover {
   color: #fff;
 }
 
+@media (width < 750px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 100px);
+    left: -100%;
+    top: 100px;
+    background-color: #333;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+    color: #fff;
+  }
+
+  .section__container {
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+    order: -1;
+  }
+
+  .blogg {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 0;
+  }
+  .blogg article {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .blogg h2 {
+    font-size: 1.2rem;
+  }
+  .blogg p, .blogg small {
+    font-size: 0.95rem;
+  }
+  .blogg a {
+    font-size: 1rem;
+    word-break: break-all;
+  }
+
+  .contact .inner-width {
+    display: block;
+  }
+  
+  .contact .contact-info, 
+  .contact .contact-form {
+    width: 100%;
+    float: none;
+    margin: 0 0 30px 0;
+    max-width: none;
+  }
+
+  .galeri {
+    grid-template-columns: 1fr 1fr;
+  }
+}
